@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow | Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>TaskFlow</h1>
+            <p>Organize your work. Complete your goals.</p>
+        </header>
+
+        <section class="task-input">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="What needs to be done?"
+            >
+
+            <button id="addButton">+ Add Task</button>
+        </section>
+
+        <section class="filters">
+            <button class="filter-btn active" data-status="all">All</button>
+
+            <button class="filter-btn" data-status="todo">
+                To Do
+            </button>
+
+            <button class="filter-btn" data-status="in-progress">
+                In Progress
+            </button>
+
+            <button class="filter-btn" data-status="done">
+                Done
+            </button>
+        </section>
+
+        <section class="tasks-section">
+            <h2>My Tasks</h2>
+            <ul id="taskList"></ul>
+        </section>
+
+        <footer>
+            <p>Built with HTML, CSS and TypeScript</p>
+        </footer>
+
+    </main>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>
